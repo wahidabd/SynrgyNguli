@@ -5,4 +5,7 @@
     <string name="email_mobile_number">Email/Mobile Number</string>
     <string name="submit">Submit</string>
     <string name="back">Back</string>
+    <string name="tos"> By signing up, you’ve agree to our <font color="#0000ff"> terms and conditions</font>
+and <font color="#0000ff">Privacy Policy</font>.</string>
+    <string name="logindescription"> Joined us before? <font color="#0000ff"> Login</font></string>
 </resources>
