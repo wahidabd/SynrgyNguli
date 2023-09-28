@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ForgotPass">
+
+    <!-- Drawable di tengah atas -->
+    <ImageView
+        android:id="@+id/drawableImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/ic_forgot_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backButton" />
+
+        <!-- Linear Layout Vertical -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="72dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drawableImageView">
+
+        <!-- Heading "Forgot Password?" -->
+        <TextView
+            android:id="@+id/headingTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/forgot_password"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <!-- Teks "Don't worry! It happens..." -->
+        <TextView
+            android:id="@+id/descriptionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="@font/poppins"
+            android:paddingTop="8dp"
+            android:paddingBottom="16dp"
+            android:text="@string/don_t_worry_it_happens_please_enter_the_email_address_associated_with_your_account"
+            android:textSize="12sp" />
+
+        <!-- Field untuk memasukkan email -->
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="138dp"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/poppins"
+            android:hint="@string/email_mobile_number"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:textSize="11sp"
+            tools:ignore="VisualLintTextFieldSize" />
+
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/submit"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            tools:ignore="VisualLintButtonSize"
+            android:backgroundTint="@color/blackbox"
+            />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="324dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/back"
+        android:paddingStart="2dp"
+        android:paddingTop="1dp"
+        android:paddingEnd="2dp"
+        android:paddingBottom="1dp"
+        android:src="@drawable/icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintMarginStart="16dp"
+        app:layout_constraintMarginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
