@@ -1,13 +1,13 @@
-package com.wahidabd.synrgynguli
+package com.wahidabd.synrgynguli.presentation
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.core.content.ContextCompat
 import com.wahidabd.synrgynguli.databinding.ActivitySplashScreenBinding
 import com.wahidabd.synrgynguli.utils.setTimer
 
 class SplashScreenActivity : AppCompatActivity() {
+
     private val splashTimer = setTimer(
         timer = 3000,
         interval = 1000,
@@ -21,7 +21,6 @@ class SplashScreenActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         splashTimer.start()
-        statusBarColor()
     }
 
     private fun handleNavigationToNextScreen(){
@@ -30,13 +29,9 @@ class SplashScreenActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    fun statusBarColor(){
-        val color = ContextCompat.getColor(this, R.color.base_color)
-        window.statusBarColor = color
-    }
-
     override fun onDestroy() {
         super.onDestroy()
         splashTimer.cancel()
     }
+
 }
