@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
+import androidx.core.content.ContextCompat
 import com.wahidabd.synrgynguli.databinding.ActivitySplashScreenBinding
 
 class SplashScreenActivity : AppCompatActivity() {
@@ -14,6 +15,7 @@ class SplashScreenActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         splashTime()
+        statusBarColor()
     }
 
     fun splashTime(){
@@ -21,11 +23,16 @@ class SplashScreenActivity : AppCompatActivity() {
             override fun onTick(millisUntilFinished: Long) {}
 
             override fun onFinish() {
-                val intent = Intent(this@SplashScreenActivity, MainActivity::class.java)
+                val intent = Intent(this@SplashScreenActivity, HomeActivity::class.java)
                 intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                 startActivity(intent)
             }
         }
         timer.start()
+    }
+
+    fun statusBarColor(){
+        val color = ContextCompat.getColor(this, R.color.base_color)
+        window.setStatusBarColor(color)
     }
 }
