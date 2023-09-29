@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Synrgy Nguli</string>
     <string name="verification_code">Verification Code</string>
+    <string name="content_verification_code">A 4 digit code has been sent to +62 878******11</string>
+    <string name="verify">Verify</string>
+    <string name="resend_code">Resend Code</string>
+    <string name="format_time_left">%d second left</string>
 </resources>

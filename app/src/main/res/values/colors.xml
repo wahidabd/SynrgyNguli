@@ -3,4 +3,5 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="blackbox">#1C1C1C</color>
+    <color name="darkGray">#5C6672</color>
 </resources>
