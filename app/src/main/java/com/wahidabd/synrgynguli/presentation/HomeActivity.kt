@@ -1,5 +1,7 @@
-package com.wahidabd.synrgynguli
+package com.wahidabd.synrgynguli.presentation
 
+import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
@@ -9,6 +11,11 @@ import com.wahidabd.synrgynguli.databinding.ActivityHomeBinding
 import com.wahidabd.synrgynguli.model.QuickUserModel
 
 class HomeActivity : AppCompatActivity() {
+    companion object{
+        fun start(context: Context){
+            context.startActivity(Intent(context, HomeActivity::class.java))
+        }
+    }
     private lateinit var binding: ActivityHomeBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,7 +28,7 @@ class HomeActivity : AppCompatActivity() {
 
     fun statusBarColor(){
         val color = ContextCompat.getColor(this, R.color.base_color)
-        window.setStatusBarColor(color)
+        window.statusBarColor = color
     }
 
     fun bindViewModelProfileUser(){

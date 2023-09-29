@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/base_color"
     android:orientation="vertical"
-    tools:context=".HomeActivity">
+    tools:context=".presentation.HomeActivity">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:layout_width="match_parent"
