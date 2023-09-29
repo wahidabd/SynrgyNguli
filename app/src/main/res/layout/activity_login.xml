@@ -84,6 +84,7 @@
                 />
         </androidx.appcompat.widget.LinearLayoutCompat>
         <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvForgotPassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Forgot Password?"
@@ -103,6 +104,7 @@
         app:layout_constraintTop_toBottomOf="@+id/layout_edit_login"
         >
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogin"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:text="Continue"
@@ -164,9 +166,4 @@
             android:layout_gravity="center"/>
 
     </androidx.appcompat.widget.LinearLayoutCompat>
-
-
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

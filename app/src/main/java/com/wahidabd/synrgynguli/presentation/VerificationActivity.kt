@@ -1,12 +1,21 @@
 package com.wahidabd.synrgynguli.presentation
 
+import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.wahidabd.synrgynguli.R
 import com.wahidabd.synrgynguli.databinding.ActivityVerificationBinding
+import com.wahidabd.synrgynguli.utils.onBackPress
 import com.wahidabd.synrgynguli.utils.setTimer
 
 class VerificationActivity : AppCompatActivity() {
+
+    companion object {
+        fun start(context: Context) {
+            context.startActivity(Intent(context, VerificationActivity::class.java))
+        }
+    }
 
     private val countDown = setTimer(
         timer = 60000,
@@ -29,6 +38,9 @@ class VerificationActivity : AppCompatActivity() {
 
         countDown.start()
         showVerificationCode.start()
+
+        binding.imgBack.setOnClickListener { onBackPress() }
+        binding.btnVerify.setOnClickListener { ResetPassword.start(this) }
     }
 
     private fun setVerificationCode() = with(binding){

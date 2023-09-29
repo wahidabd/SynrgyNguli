@@ -20,13 +20,18 @@ class SplashScreenActivity : AppCompatActivity() {
         binding = ActivitySplashScreenBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
+        splashTimer.start()
     }
 
     private fun handleNavigationToNextScreen(){
         val intent = Intent(this@SplashScreenActivity, SignupActivity::class.java)
         intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
         startActivity(intent)
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        splashTimer.cancel()
     }
 
 }
