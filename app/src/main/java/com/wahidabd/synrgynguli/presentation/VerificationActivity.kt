@@ -1,14 +1,10 @@
-package com.wahidabd.synrgynguli
+package com.wahidabd.synrgynguli.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.wahidabd.synrgynguli.R
 import com.wahidabd.synrgynguli.databinding.ActivityVerificationBinding
 import com.wahidabd.synrgynguli.utils.setTimer
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.coroutineScope
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.runBlocking
-import kotlinx.coroutines.withContext
 
 class VerificationActivity : AppCompatActivity() {
 

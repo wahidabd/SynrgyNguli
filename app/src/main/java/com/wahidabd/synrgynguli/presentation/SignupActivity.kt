@@ -1,11 +1,12 @@
-package com.wahidabd.synrgynguli
+package com.wahidabd.synrgynguli.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.wahidabd.synrgynguli.R
 
-class ForgotPasswordActivity : AppCompatActivity() {
+class SignupActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_forgot_password)
+        setContentView(R.layout.activity_sign_up_psw)
     }
 }
