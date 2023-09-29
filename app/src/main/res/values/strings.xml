@@ -5,4 +5,18 @@
     <string name="verify">Verify</string>
     <string name="resend_code">Resend Code</string>
     <string name="format_time_left">%d second left</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="don_t_worry_it_happens_please_enter_the_email_address_associated_with_your_account">Don\'t worry! It happens. Please enter the email address associated with your account</string>
+    <string name="email_mobile_number">Email/Mobile Number</string>
+    <string name="submit">Submit</string>
+    <string name="back">Back</string>
+
+    <string name="apk_register">
+        New to mobile? <font color="#0061a5">Register</font>
+    </string>
+
+    <string name="tos"> By signing up, you’ve agree to our <font color="#0000ff"> terms and conditions</font>
+and <font color="#0000ff">Privacy Policy</font>.</string>
+    <string name="logindescription"> Joined us before? <font color="#0000ff"> Login</font></string>
+
 </resources>
