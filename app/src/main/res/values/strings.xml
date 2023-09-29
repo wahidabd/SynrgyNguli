@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">Synrgy Nguli</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="content_verification_code">A 4 digit code has been sent to +62 878******11</string>
+    <string name="verify">Verify</string>
+    <string name="resend_code">Resend Code</string>
+    <string name="format_time_left">%d second left</string>
     <string name="forgot_password">Forgot Password ?</string>
     <string name="don_t_worry_it_happens_please_enter_the_email_address_associated_with_your_account">Don\'t worry! It happens. Please enter the email address associated with your account</string>
     <string name="email_mobile_number">Email/Mobile Number</string>
