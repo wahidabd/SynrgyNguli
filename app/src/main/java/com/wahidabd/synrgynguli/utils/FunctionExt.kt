@@ -1,6 +1,7 @@
 package com.wahidabd.synrgynguli.utils
 
 import android.os.CountDownTimer
+import androidx.appcompat.app.AppCompatActivity
 
 
 /**
@@ -22,3 +23,5 @@ fun setTimer(
         onFinis?.invoke()
     }
 }
+
+fun AppCompatActivity.onBackPress() = onBackPressedDispatcher.onBackPressed()
