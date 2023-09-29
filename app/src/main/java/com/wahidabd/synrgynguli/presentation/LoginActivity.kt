@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.core.content.ContextCompat
 import com.wahidabd.synrgynguli.R
 import com.wahidabd.synrgynguli.databinding.ActivityLoginBinding
 
@@ -19,6 +20,8 @@ class LoginActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        statusBarColor()
+
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -27,7 +30,16 @@ class LoginActivity : AppCompatActivity() {
         }
 
         binding.btnLogin.setOnClickListener {
-            MainActivity.start(this)
+            HomeActivity.start(this)
         }
+
+        binding.tvRegister.setOnClickListener {
+            SignupActivity.start(this)
+        }
+    }
+
+    fun statusBarColor(){
+        val color = ContextCompat.getColor(this, R.color.white)
+        window.statusBarColor = color
     }
 }
